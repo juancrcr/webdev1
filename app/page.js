@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Home() {
   return (
     // <div className="bg-[green] text-[67px] py-1 pt-8 pl-100 p-4 px-10 text-[white] font-[700]">
@@ -18,10 +19,21 @@ export default function Home() {
   // </div>
 
   <div className="w-full h-screen flex justify-center items-center flex-col lg:flex-row relative gap-2 bg-[pink]">
-    <div className="bg-[orange] relative w-[300px] h-[200px]"></div>
-    <div className="bg-[orange] relative w-[300px] h-[200px]"></div>
-    <div className="bg-[orange] relative w-[300px] h-[200px]"></div>
-  </div>
+    <Link 
+     href="https://google.com"
+     target="_blank"
+    className="bg-[orange] hover:bg-[red] duration-300 relative w-[300px] h-[200px]">
+      google
+    </Link>
+    <Link 
+      href="/form"
+     target="_blank"
+     className="bg-[orange] relative w-[300px] hover:bg-[red] duration-300 h-[200px]">form</Link>
+    <Link 
+     href="/ganjil"
+     target="_blank"
+     className="bg-[orange] relative w-[300px] hover:bg-[red] duration-300 h-[200px]">color</Link>
+    </div>
 
   )
 }

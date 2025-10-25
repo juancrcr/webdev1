@@ -6,5 +6,6 @@ export default function Page(){
             <div className="bg-gradient-to-r from-[black] to-[purple]  top-[10px] right-[100px] fixed w-[300px] h-[400px] " /> 
             
            </div>
+   
     )
 }
